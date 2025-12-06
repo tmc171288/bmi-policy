@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BMI SHAPECHECK</title>
+    <meta
+      name="description"
+      content="A simple and accurate tool to check your BMI and understand your health status."
+    />
+    <meta property="og:title" content="BMI ShapeCheck" />
+    <meta
+      property="og:description"
+      content="A simple and accurate tool to check your BMI and understand your health status."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Bebas Neue + Inter -->
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- STYLES: Layout & Design -->
+    <style>
+      /* Global Style for entire page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        nav {
+        background-color: #292929e7;
+        padding: 20px;
+        text-align: right;
+        
+      }
+
+        /* Navigation Link Style */
+        nav a {
+          margin: 10px;
+          color: #aca6a6;
+          text-decoration: none;
+          font-weight: 500;
+        }
+
+        nav a:hover {
+          color: #f5f0f0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .update-date {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .update-date strong {
+            color: #667eea;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        .contact-box {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 2px solid #667eea;
+        }
+
+        .contact-box h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            color: #6c757d;
+            border-top: 2px solid #e9ecef;
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+  </head>
+
+  <!-- Body: The Content -->
+  <body>
+    <!-- Navigation Section -->
+    
+
+    <!-- Header Section -->
+   <div class="container">
+    <nav>
+      <!-- Nav Links -->
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+        <div class="header">
+            <h1>📊 Privacy Policy</h1>
+            <p>BMI ShapeCheck - Health Tracking Application</p>
+        </div>
+
+        <div class="content">
+            <div class="update-date">
+                <strong>🕐 Last Updated:</strong> December 07, 2025
+            </div>
+
+            <section>
+                <h2>1. Introduction</h2>
+                <p>
+                    Welcome to BMI ShapeCheck! We are committed to protecting your privacy and personal information. 
+                    This Privacy Policy explains how we collect, use, store, and protect your information when you 
+                    use the BMI ShapeCheck application.
+                </p>
+                <p>
+                    By using the application, you agree to the terms described in this policy. If you do not agree 
+                    with any part, please do not use our application.
+                </p>
+            </section>
+
+            <section>
+                <h2>2. Information We Collect</h2>
+                
+                <h3>2.1. Personal Information</h3>
+                <p>To calculate BMI and provide health recommendations, we may collect:</p>
+                <ul>
+                    <li><strong>Body information:</strong> Height, weight, age, gender</li>
+                    <li><strong>Account information:</strong> Email, username (if you create an account)</li>
+                    <li><strong>Tracking data:</strong> Weight history, health goals, personal notes</li>
+                    <li><strong>Photos (optional):</strong> Progress photos if you choose to store them</li>
+                </ul>
+
+                <h3>2.2. Technical Information</h3>
+                <ul>
+                    <li>Device type and operating system</li>
+                    <li>Application version</li>
+                    <li>Error logs and performance data</li>
+                    <li>IP address and general location data (if permission granted)</li>
+                </ul>
+
+                <h3>2.3. Usage Data</h3>
+                <ul>
+                    <li>Frequency of app usage</li>
+                    <li>Features used</li>
+                    <li>Time spent in the app</li>
+                    <li>Interface interactions</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. How We Use Your Information</h2>
+                <p>Your information is used for the following purposes:</p>
+                <ol>
+                    <li><strong>BMI Calculation:</strong> Determine body mass index and health classification</li>
+                    <li><strong>Personalize Experience:</strong> Provide recommendations tailored to your goals</li>
+                    <li><strong>Track Progress:</strong> Store history and create development charts</li>
+                    <li><strong>Improve Services:</strong> Analyze usage trends to enhance quality</li>
+                    <li><strong>Send Notifications:</strong> Weight update reminders, health tips (if consented)</li>
+                    <li><strong>Customer Support:</strong> Resolve technical issues and support requests</li>
+                    <li><strong>Security:</strong> Prevent fraud and service abuse</li>
+                </ol>
+            </section>
+
+            <div class="highlight">
+                <strong>⚠️ Important Note:</strong> We will NEVER sell your personal information to third parties. 
+                Your health data is completely confidential and only used to serve you better.
+            </div>
+
+            <section>
+                <h2>4. Information Sharing</h2>
+                <p>We only share your information in the following cases:</p>
+                
+                <h3>4.1. With Your Consent</h3>
+                <p>When you actively permit information sharing with third parties.</p>
+
+                <h3>4.2. Service Providers</h3>
+                <p>With trusted partners who help operate the application:</p>
+                <ul>
+                    <li>Cloud storage services</li>
+                    <li>Data analytics</li>
+                    <li>Push notification services</li>
+                </ul>
+                <p><em>These partners must strictly comply with security standards and only use data according to our instructions.</em></p>
+
+                <h3>4.3. Legal Requirements</h3>
+                <p>When required by law or to protect our legitimate rights.</p>
+            </section>
+
+            <section>
+                <h2>5. Data Security</h2>
+                <p>We implement multiple security measures to protect your information:</p>
+                <ul>
+                    <li><strong>Encryption:</strong> Data is encrypted during both transmission and storage (SSL/TLS, AES-256)</li>
+                    <li><strong>Authentication:</strong> Secure authentication system with strong passwords</li>
+                    <li><strong>Access Control:</strong> Only authorized personnel have data access</li>
+                    <li><strong>Regular Backups:</strong> Data is backed up periodically to prevent loss</li>
+                    <li><strong>Monitoring:</strong> 24/7 monitoring system to detect and prevent unauthorized access</li>
+                    <li><strong>Security Updates:</strong> Regular updates and security patches</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. User Rights</h2>
+                <p>You have the following rights regarding your personal data:</p>
+                
+                <h3>6.1. Right to Access</h3>
+                <p>Request to view all personal data we store about you.</p>
+
+                <h3>6.2. Right to Rectification</h3>
+                <p>Update or correct inaccurate information in your account.</p>
+
+                <h3>6.3. Right to Deletion</h3>
+                <p>Request deletion of your account and all related data (may take up to 30 days).</p>
+
+                <h3>6.4. Right to Data Portability</h3>
+                <p>Download a copy of your data in a readable format.</p>
+
+                <h3>6.5. Right to Withdraw Consent</h3>
+                <p>Withdraw consent for any data processing purpose at any time.</p>
+
+                <h3>6.6. Right to Object</h3>
+                <p>Opt out of receiving marketing emails or non-essential notifications.</p>
+            </section>
+
+            <section>
+                <h2>7. Data Retention</h2>
+                <p>
+                    Your data is stored on secure servers at internationally certified data centers. 
+                    We retain your information:
+                </p>
+                <ul>
+                    <li>As long as your account remains active</li>
+                    <li>For the time necessary to provide services</li>
+                    <li>As required by applicable law</li>
+                </ul>
+                <p>
+                    After you delete your account, we will delete or anonymize your data within 30 days, 
+                    unless the law requires retention for a longer period.
+                </p>
+            </section>
+
+            <section>
+                <h2>8. Cookies and Tracking Technologies</h2>
+                <p>We use cookies and similar technologies to:</p>
+                <ul>
+                    <li>Remember your preferences</li>
+                    <li>Analyze app usage</li>
+                    <li>Improve performance</li>
+                    <li>Provide relevant content</li>
+                </ul>
+                <p>
+                    You can manage cookies through your device settings. Note that disabling cookies 
+                    may affect some features of the application.
+                </p>
+            </section>
+
+            <section>
+                <h2>9. Children's Privacy</h2>
+                <p>
+                    BMI ShapeCheck is not intended for children under 13 years of age. We do not knowingly 
+                    collect information from children. If you are a parent and discover that your child has 
+                    provided information to us, please contact us immediately so we can delete that data.
+                </p>
+                <p>
+                    For users aged 13-18, we encourage parental supervision when using the application.
+                </p>
+            </section>
+
+            <section>
+                <h2>10. Third-Party Links</h2>
+                <p>
+                    The application may contain links to third-party websites or services. We are not 
+                    responsible for the privacy policies of these sites. We recommend you read their 
+                    privacy policies carefully before providing information.
+                </p>
+            </section>
+
+            <section>
+                <h2>11. Changes to This Policy</h2>
+                <p>
+                    We may update this privacy policy from time to time to reflect changes in our operations 
+                    or for legal reasons. When there are significant changes, we will:
+                </p>
+                <ul>
+                    <li>Notify you via email (if available)</li>
+                    <li>Display a notification in the app</li>
+                    <li>Update the "Last Updated" date at the top of the page</li>
+                </ul>
+                <p>
+                    Continued use of the application after changes means you accept the new policy.
+                </p>
+            </section>
+
+            <section>
+                <h2>12. International Data Transfers</h2>
+                <p>
+                    Your data may be transferred and processed in countries where our servers are located. 
+                    We ensure that such transfers comply with applicable data protection regulations and 
+                    apply appropriate security measures.
+                </p>
+            </section>
+
+            <section>
+                <h2>13. Data Breach</h2>
+                <p>
+                    In the unfortunate event of a data breach that may affect your personal information, 
+                    we commit to:
+                </p>
+                <ul>
+                    <li>Notify you within 72 hours</li>
+                    <li>Explain the nature of the breach</li>
+                    <li>Describe remedial steps</li>
+                    <li>Provide guidance on account protection</li>
+                    <li>Report to authorities if necessary</li>
+                </ul>
+            </section>
+
+            <div class="contact-box">
+                <h3>📧 Contact Us</h3>
+                <p>
+                    If you have any questions, concerns, or requests regarding this privacy policy or how 
+                    we handle your data, please contact:
+                </p>
+                <ul style="list-style: none; margin-left: 0;">
+                    <li><strong>📧 Email:</strong> beckmigue607@gmail.com</li>
+                    <li><strong>📱 Hotline:</strong> +447463765079</li>
+                    <li><strong>🏢 Address:</strong> 3855 N Park Ave Indianapolis</li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <strong>Response Time:</strong> We commit to responding to all requests within 48 business hours.
+                </p>
+            </div>
+
+            <section>
+                <h2>14. Consent</h2>
+                <p>
+                    By downloading, installing, and using the BMI ShapeCheck application, you acknowledge that 
+                    you have read, understood, and agree to all terms in this Privacy Policy.
+                </p>
+                <div class="highlight">
+                    <strong>✅ Our Commitment:</strong> Protecting your privacy is our top priority. 
+                    We continuously strive to ensure your information is safe and used responsibly.
+                </div>
+            </section>
+        </div>
+
+        <div class="footer">
+            <p><strong>BMI ShapeCheck</strong> - Taking care of your health every day</p>
+            <p>© 2025 BMI ShapeCheck. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                Version 1.0 | Effective Date: December 07, 2025
+            </p>
+        </div>
+    </div>
+  </body>
+</html>
